@@ -1,0 +1,709 @@
+[INFO] DAC opened
+[INFO] ADC opened
+[INFO] Encoder enabled
+[INFO] LDC sensors: 2
+[INFO] Captured encoder zero (main): 0.000 deg
+[INFO] Sensors: ADC=yes LDC=2(0x2B,0x2A) Encoder=yes
+[INFO] Run 1/100
+[DEBUG] Pre-valve encoder raw (run 1): -0.000 deg
+[INFO] Captured encoder zero for run 1: -0.088 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_000.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_000.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_000.png
+[INFO] Run 2/100
+[DEBUG] Pre-valve encoder raw (run 2): 13.887 deg
+[INFO] Captured encoder zero for run 2: 13.975 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_001.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_001.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_001.png
+[INFO] Run 3/100
+[DEBUG] Pre-valve encoder raw (run 3): 23.115 deg
+[INFO] Captured encoder zero for run 3: 23.115 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_002.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_002.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_002.png
+[INFO] Run 4/100
+[DEBUG] Pre-valve encoder raw (run 4): 30.938 deg
+[INFO] Captured encoder zero for run 4: 30.938 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_003.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_003.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_003.png
+[INFO] Run 5/100
+[DEBUG] Pre-valve encoder raw (run 5): 56.689 deg
+[INFO] Captured encoder zero for run 5: 56.777 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_004.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_004.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_004.png
+[INFO] Run 6/100
+[DEBUG] Pre-valve encoder raw (run 6): 54.229 deg
+[INFO] Captured encoder zero for run 6: 54.229 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_005.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_005.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_005.png
+[INFO] Run 7/100
+[DEBUG] Pre-valve encoder raw (run 7): 83.848 deg
+[INFO] Captured encoder zero for run 7: 83.760 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_006.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_006.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_006.png
+[INFO] Run 8/100
+[DEBUG] Pre-valve encoder raw (run 8): 92.285 deg
+[INFO] Captured encoder zero for run 8: 92.285 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_007.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_007.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_007.png
+[INFO] Run 9/100
+[DEBUG] Pre-valve encoder raw (run 9): 109.160 deg
+[INFO] Captured encoder zero for run 9: 109.072 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_008.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_008.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_008.png
+[INFO] Run 10/100
+[DEBUG] Pre-valve encoder raw (run 10): 128.408 deg
+[INFO] Captured encoder zero for run 10: 128.496 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_009.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_009.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_009.png
+[INFO] Run 11/100
+[DEBUG] Pre-valve encoder raw (run 11): 152.578 deg
+[INFO] Captured encoder zero for run 11: 152.578 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_010.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_010.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_010.png
+[INFO] Run 12/100
+[DEBUG] Pre-valve encoder raw (run 12): 157.412 deg
+[INFO] Captured encoder zero for run 12: 157.412 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_011.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_011.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_011.png
+[INFO] Run 13/100
+[DEBUG] Pre-valve encoder raw (run 13): 167.871 deg
+[INFO] Captured encoder zero for run 13: 167.871 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_012.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_012.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_012.png
+[INFO] Run 14/100
+[DEBUG] Pre-valve encoder raw (run 14): 164.443 deg
+[INFO] Captured encoder zero for run 14: 164.443 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_013.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_013.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_013.png
+[INFO] Run 15/100
+[DEBUG] Pre-valve encoder raw (run 15): 186.943 deg
+[INFO] Captured encoder zero for run 15: 186.855 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_014.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_014.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_014.png
+[INFO] Run 16/100
+[DEBUG] Pre-valve encoder raw (run 16): 185.098 deg
+[INFO] Captured encoder zero for run 16: 185.098 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_015.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_015.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_015.png
+[INFO] Run 17/100
+[DEBUG] Pre-valve encoder raw (run 17): 172.266 deg
+[INFO] Captured encoder zero for run 17: 172.266 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_016.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_016.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_016.png
+[INFO] Run 18/100
+[DEBUG] Pre-valve encoder raw (run 18): 184.219 deg
+[INFO] Captured encoder zero for run 18: 184.307 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_017.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_017.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_017.png
+[INFO] Run 19/100
+[DEBUG] Pre-valve encoder raw (run 19): 212.783 deg
+[INFO] Captured encoder zero for run 19: 212.871 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_018.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_018.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_018.png
+[INFO] Run 20/100
+[DEBUG] Pre-valve encoder raw (run 20): 213.926 deg
+[INFO] Captured encoder zero for run 20: 213.926 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_019.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_019.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_019.png
+[INFO] Run 21/100
+[DEBUG] Pre-valve encoder raw (run 21): 211.904 deg
+[INFO] Captured encoder zero for run 21: 211.816 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_020.csv
+/home/hosodalab2/Desktop/MyRobot/apps/myrobot_lib/plotter.py:86: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig = plt.figure(figsize=(10, 12))
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_020.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_020.png
+[INFO] Run 22/100
+[DEBUG] Pre-valve encoder raw (run 22): 224.121 deg
+[INFO] Captured encoder zero for run 22: 224.209 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_021.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_021.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_021.png
+[INFO] Run 23/100
+[DEBUG] Pre-valve encoder raw (run 23): 228.516 deg
+[INFO] Captured encoder zero for run 23: 228.516 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_022.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_022.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_022.png
+[INFO] Run 24/100
+[DEBUG] Pre-valve encoder raw (run 24): 241.611 deg
+[INFO] Captured encoder zero for run 24: 241.611 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_023.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_023.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_023.png
+[INFO] Run 25/100
+[DEBUG] Pre-valve encoder raw (run 25): 235.371 deg
+[INFO] Captured encoder zero for run 25: 235.371 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_024.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_024.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_024.png
+[INFO] Run 26/100
+[DEBUG] Pre-valve encoder raw (run 26): 237.920 deg
+[INFO] Captured encoder zero for run 26: 237.920 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_025.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_025.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_025.png
+[INFO] Run 27/100
+[DEBUG] Pre-valve encoder raw (run 27): 260.508 deg
+[INFO] Captured encoder zero for run 27: 260.596 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_026.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_026.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_026.png
+[INFO] Run 28/100
+[DEBUG] Pre-valve encoder raw (run 28): 275.625 deg
+[INFO] Captured encoder zero for run 28: 275.625 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_027.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_027.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_027.png
+[INFO] Run 29/100
+[DEBUG] Pre-valve encoder raw (run 29): 268.857 deg
+[INFO] Captured encoder zero for run 29: 268.857 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_028.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_028.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_028.png
+[INFO] Run 30/100
+[DEBUG] Pre-valve encoder raw (run 30): 277.031 deg
+[INFO] Captured encoder zero for run 30: 277.031 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_029.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_029.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_029.png
+[INFO] Run 31/100
+[DEBUG] Pre-valve encoder raw (run 31): 291.709 deg
+[INFO] Captured encoder zero for run 31: 291.621 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_030.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_030.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_030.png
+[INFO] Run 32/100
+[DEBUG] Pre-valve encoder raw (run 32): 286.523 deg
+[INFO] Captured encoder zero for run 32: 286.523 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_031.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_031.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_031.png
+[INFO] Run 33/100
+[DEBUG] Pre-valve encoder raw (run 33): 284.150 deg
+[INFO] Captured encoder zero for run 33: 284.150 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_032.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_032.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_032.png
+[INFO] Run 34/100
+[DEBUG] Pre-valve encoder raw (run 34): 279.932 deg
+[INFO] Captured encoder zero for run 34: 280.020 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_033.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_033.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_033.png
+[INFO] Run 35/100
+[DEBUG] Pre-valve encoder raw (run 35): 308.672 deg
+[INFO] Captured encoder zero for run 35: 308.584 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_034.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_034.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_034.png
+[INFO] Run 36/100
+[DEBUG] Pre-valve encoder raw (run 36): 306.387 deg
+[INFO] Captured encoder zero for run 36: 306.475 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_035.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_035.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_035.png
+[INFO] Run 37/100
+[DEBUG] Pre-valve encoder raw (run 37): 312.188 deg
+[INFO] Captured encoder zero for run 37: 312.188 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_036.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_036.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_036.png
+[INFO] Run 38/100
+[DEBUG] Pre-valve encoder raw (run 38): 313.242 deg
+[INFO] Captured encoder zero for run 38: 313.330 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_037.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_037.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_037.png
+[INFO] Run 39/100
+[DEBUG] Pre-valve encoder raw (run 39): 342.334 deg
+[INFO] Captured encoder zero for run 39: 342.334 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_038.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_038.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_038.png
+[INFO] Run 40/100
+[DEBUG] Pre-valve encoder raw (run 40): 339.697 deg
+[INFO] Captured encoder zero for run 40: 339.697 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_039.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_039.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_039.png
+[INFO] Run 41/100
+[DEBUG] Pre-valve encoder raw (run 41): 352.617 deg
+[INFO] Captured encoder zero for run 41: 352.529 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_040.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_040.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_040.png
+[INFO] Run 42/100
+[DEBUG] Pre-valve encoder raw (run 42): 373.008 deg
+[INFO] Captured encoder zero for run 42: 372.920 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_041.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_041.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_041.png
+[INFO] Run 43/100
+[DEBUG] Pre-valve encoder raw (run 43): 372.744 deg
+[INFO] Captured encoder zero for run 43: 372.832 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_042.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_042.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_042.png
+[INFO] Run 44/100
+[DEBUG] Pre-valve encoder raw (run 44): 391.816 deg
+[INFO] Captured encoder zero for run 44: 391.816 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_043.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_043.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_043.png
+[INFO] Run 45/100
+[DEBUG] Pre-valve encoder raw (run 45): 392.256 deg
+[INFO] Captured encoder zero for run 45: 392.344 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_044.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_044.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_044.png
+[INFO] Run 46/100
+[DEBUG] Pre-valve encoder raw (run 46): 397.090 deg
+[INFO] Captured encoder zero for run 46: 397.178 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_045.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_045.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_045.png
+[INFO] Run 47/100
+[DEBUG] Pre-valve encoder raw (run 47): 416.426 deg
+[INFO] Captured encoder zero for run 47: 416.514 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_046.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_046.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_046.png
+[INFO] Run 48/100
+[DEBUG] Pre-valve encoder raw (run 48): 431.455 deg
+[INFO] Captured encoder zero for run 48: 431.367 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_047.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_047.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_047.png
+[INFO] Run 49/100
+[DEBUG] Pre-valve encoder raw (run 49): 424.072 deg
+[INFO] Captured encoder zero for run 49: 424.072 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_048.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_048.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_048.png
+[INFO] Run 50/100
+[DEBUG] Pre-valve encoder raw (run 50): 456.416 deg
+[INFO] Captured encoder zero for run 50: 456.504 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_049.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_049.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_049.png
+[INFO] Run 51/100
+[DEBUG] Pre-valve encoder raw (run 51): 475.488 deg
+[INFO] Captured encoder zero for run 51: 475.488 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_050.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_050.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_050.png
+[INFO] Run 52/100
+[DEBUG] Pre-valve encoder raw (run 52): 479.355 deg
+[INFO] Captured encoder zero for run 52: 479.355 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_051.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_051.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_051.png
+[INFO] Run 53/100
+[DEBUG] Pre-valve encoder raw (run 53): 495.264 deg
+[INFO] Captured encoder zero for run 53: 495.264 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_052.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_052.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_052.png
+[INFO] Run 54/100
+[DEBUG] Pre-valve encoder raw (run 54): 493.770 deg
+[INFO] Captured encoder zero for run 54: 493.770 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_053.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_053.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_053.png
+[INFO] Run 55/100
+[DEBUG] Pre-valve encoder raw (run 55): 485.068 deg
+[INFO] Captured encoder zero for run 55: 485.068 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_054.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_054.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_054.png
+[INFO] Run 56/100
+[DEBUG] Pre-valve encoder raw (run 56): 480.059 deg
+[INFO] Captured encoder zero for run 56: 480.059 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_055.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_055.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_055.png
+[INFO] Run 57/100
+[DEBUG] Pre-valve encoder raw (run 57): 503.965 deg
+[INFO] Captured encoder zero for run 57: 504.053 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_056.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_056.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_056.png
+[INFO] Run 58/100
+[DEBUG] Pre-valve encoder raw (run 58): 496.934 deg
+[INFO] Captured encoder zero for run 58: 496.934 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_057.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_057.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_057.png
+[INFO] Run 59/100
+[DEBUG] Pre-valve encoder raw (run 59): 524.443 deg
+[INFO] Captured encoder zero for run 59: 524.355 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_058.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_058.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_058.png
+[INFO] Run 60/100
+[DEBUG] Pre-valve encoder raw (run 60): 534.111 deg
+[INFO] Captured encoder zero for run 60: 534.199 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_059.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_059.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_059.png
+[INFO] Run 61/100
+[DEBUG] Pre-valve encoder raw (run 61): 540.000 deg
+[INFO] Captured encoder zero for run 61: 540.000 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_060.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_060.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_060.png
+[INFO] Run 62/100
+[DEBUG] Pre-valve encoder raw (run 62): 546.152 deg
+[INFO] Captured encoder zero for run 62: 546.064 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_061.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_061.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_061.png
+[INFO] Run 63/100
+[DEBUG] Pre-valve encoder raw (run 63): 561.533 deg
+[INFO] Captured encoder zero for run 63: 561.621 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_062.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_062.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_062.png
+[INFO] Run 64/100
+[DEBUG] Pre-valve encoder raw (run 64): 592.734 deg
+[INFO] Captured encoder zero for run 64: 592.646 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_063.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_063.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_063.png
+[INFO] Run 65/100
+[DEBUG] Pre-valve encoder raw (run 65): 602.490 deg
+[INFO] Captured encoder zero for run 65: 602.490 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_064.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_064.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_064.png
+[INFO] Run 66/100
+[DEBUG] Pre-valve encoder raw (run 66): 625.430 deg
+[INFO] Captured encoder zero for run 66: 625.430 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_065.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_065.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_065.png
+[INFO] Run 67/100
+[DEBUG] Pre-valve encoder raw (run 67): 628.242 deg
+[INFO] Captured encoder zero for run 67: 628.154 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_066.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_066.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_066.png
+[INFO] Run 68/100
+[DEBUG] Pre-valve encoder raw (run 68): 653.027 deg
+[INFO] Captured encoder zero for run 68: 653.115 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_067.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_067.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_067.png
+[INFO] Run 69/100
+[DEBUG] Pre-valve encoder raw (run 69): 646.875 deg
+[INFO] Captured encoder zero for run 69: 646.963 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_068.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_068.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_068.png
+[INFO] Run 70/100
+[DEBUG] Pre-valve encoder raw (run 70): 653.994 deg
+[INFO] Captured encoder zero for run 70: 653.994 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_069.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_069.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_069.png
+[INFO] Run 71/100
+[DEBUG] Pre-valve encoder raw (run 71): 646.963 deg
+[INFO] Captured encoder zero for run 71: 646.963 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_070.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_070.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_070.png
+[INFO] Run 72/100
+[DEBUG] Pre-valve encoder raw (run 72): 641.162 deg
+[INFO] Captured encoder zero for run 72: 641.162 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_071.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_071.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_071.png
+[INFO] Run 73/100
+[DEBUG] Pre-valve encoder raw (run 73): 646.611 deg
+[INFO] Captured encoder zero for run 73: 646.523 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_072.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_072.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_072.png
+[INFO] Run 74/100
+[DEBUG] Pre-valve encoder raw (run 74): 643.535 deg
+[INFO] Captured encoder zero for run 74: 643.535 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_073.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_073.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_073.png
+[INFO] Run 75/100
+[DEBUG] Pre-valve encoder raw (run 75): 660.410 deg
+[INFO] Captured encoder zero for run 75: 660.498 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_074.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_074.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_074.png
+[INFO] Run 76/100
+[DEBUG] Pre-valve encoder raw (run 76): 679.658 deg
+[INFO] Captured encoder zero for run 76: 679.570 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_075.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_075.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_075.png
+[INFO] Run 77/100
+[DEBUG] Pre-valve encoder raw (run 77): 688.447 deg
+[INFO] Captured encoder zero for run 77: 688.447 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_076.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_076.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_076.png
+[INFO] Run 78/100
+[DEBUG] Pre-valve encoder raw (run 78): 718.242 deg
+[INFO] Captured encoder zero for run 78: 718.154 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_077.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_077.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_077.png
+[INFO] Run 79/100
+[DEBUG] Pre-valve encoder raw (run 79): 712.881 deg
+[INFO] Captured encoder zero for run 79: 712.969 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_078.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_078.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_078.png
+[INFO] Run 80/100
+[DEBUG] Pre-valve encoder raw (run 80): 701.104 deg
+[INFO] Captured encoder zero for run 80: 701.104 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_079.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_079.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_079.png
+[INFO] Run 81/100
+[DEBUG] Pre-valve encoder raw (run 81): 730.107 deg
+[INFO] Captured encoder zero for run 81: 730.195 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_080.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_080.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_080.png
+[INFO] Run 82/100
+[DEBUG] Pre-valve encoder raw (run 82): 719.736 deg
+[INFO] Captured encoder zero for run 82: 719.824 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_081.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_081.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_081.png
+[INFO] Run 83/100
+[DEBUG] Pre-valve encoder raw (run 83): 713.672 deg
+[INFO] Captured encoder zero for run 83: 713.760 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_082.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_082.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_082.png
+[INFO] Run 84/100
+[DEBUG] Pre-valve encoder raw (run 84): 736.260 deg
+[INFO] Captured encoder zero for run 84: 736.172 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_083.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_083.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_083.png
+[INFO] Run 85/100
+[DEBUG] Pre-valve encoder raw (run 85): 759.814 deg
+[INFO] Captured encoder zero for run 85: 759.902 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_084.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_084.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_084.png
+[INFO] Run 86/100
+[DEBUG] Pre-valve encoder raw (run 86): 773.525 deg
+[INFO] Captured encoder zero for run 86: 773.525 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_085.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_085.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_085.png
+[INFO] Run 87/100
+[DEBUG] Pre-valve encoder raw (run 87): 785.742 deg
+[INFO] Captured encoder zero for run 87: 785.742 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_086.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_086.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_086.png
+[INFO] Run 88/100
+[DEBUG] Pre-valve encoder raw (run 88): 806.836 deg
+[INFO] Captured encoder zero for run 88: 806.924 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_087.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_087.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_087.png
+[INFO] Run 89/100
+[DEBUG] Pre-valve encoder raw (run 89): 818.965 deg
+[INFO] Captured encoder zero for run 89: 818.965 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_088.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_088.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_088.png
+[INFO] Run 90/100
+[DEBUG] Pre-valve encoder raw (run 90): 838.652 deg
+[INFO] Captured encoder zero for run 90: 838.652 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_089.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_089.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_089.png
+[INFO] Run 91/100
+[DEBUG] Pre-valve encoder raw (run 91): 837.773 deg
+[INFO] Captured encoder zero for run 91: 837.861 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_090.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_090.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_090.png
+[INFO] Run 92/100
+[DEBUG] Pre-valve encoder raw (run 92): 859.395 deg
+[INFO] Captured encoder zero for run 92: 859.395 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_091.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_091.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_091.png
+[INFO] Run 93/100
+[DEBUG] Pre-valve encoder raw (run 93): 882.949 deg
+[INFO] Captured encoder zero for run 93: 882.949 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_092.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_092.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_092.png
+[INFO] Run 94/100
+[DEBUG] Pre-valve encoder raw (run 94): 903.516 deg
+[INFO] Captured encoder zero for run 94: 903.604 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_093.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_093.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_093.png
+[INFO] Run 95/100
+[DEBUG] Pre-valve encoder raw (run 95): 908.262 deg
+[INFO] Captured encoder zero for run 95: 908.174 deg (offset from pre-valve: -0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_094.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_094.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_094.png
+[INFO] Run 96/100
+[DEBUG] Pre-valve encoder raw (run 96): 917.402 deg
+[INFO] Captured encoder zero for run 96: 917.490 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_095.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_095.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_095.png
+[INFO] Run 97/100
+[DEBUG] Pre-valve encoder raw (run 97): 921.621 deg
+[INFO] Captured encoder zero for run 97: 921.621 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_096.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_096.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_096.png
+[INFO] Run 98/100
+[DEBUG] Pre-valve encoder raw (run 98): 944.121 deg
+[INFO] Captured encoder zero for run 98: 944.121 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_097.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_097.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_097.png
+[INFO] Run 99/100
+[DEBUG] Pre-valve encoder raw (run 99): 968.379 deg
+[INFO] Captured encoder zero for run 99: 968.467 deg (offset from pre-valve: 0.088 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_098.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_098.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_098.png
+[INFO] Run 100/100
+[DEBUG] Pre-valve encoder raw (run 100): 991.143 deg
+[INFO] Captured encoder zero for run 100: 991.143 deg (offset from pre-valve: 0.000 deg)
+[DEBUG] Trajectory params: {'q0': -0.0, 'q_limit': (0.0, 100.0), 'q_range': (-10.0, 30.0), 'low': -10.0, 'high': 30.0, 'update_q_delta': (0.0, 30.0), 't_range_pass': (0.1, 1.0)}
+[INFO] CSV saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_099.csv
+[INFO] Plot saved: data/myrobot/hirai/csv/20250831/step/fast/motion_data_099.png
+[INFO] Plot saved: data/myrobot/hirai/graph/20250831/step/fast/motion_data_099.png
+[INFO] All runs finished

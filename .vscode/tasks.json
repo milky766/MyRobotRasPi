@@ -1,0 +1,27 @@
+{
+  // PDF utility tasks
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PDF: Render pages",
+      "type": "shell",
+      "command": "uv run python docs/hardware/control_board/scripts/render_pdf.py --in docs/hardware/control_board/control_board.pdf --out docs/hardware/control_board/pages --pages all",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "PDF: Extract text",
+      "type": "shell",
+      "command": "uv run python docs/hardware/control_board/scripts/extract_pdf.py --in docs/hardware/control_board/control_board.pdf --out docs/hardware/control_board/text --pages all",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "PDF: OCR pages",
+      "type": "shell",
+      "command": "uv run python docs/hardware/control_board/scripts/ocr_pdf.py --src docs/hardware/control_board/pages --dst docs/hardware/control_board/ocr --lang eng",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

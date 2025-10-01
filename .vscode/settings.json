@@ -1,0 +1,7 @@
+{
+    "python-envs.pythonProjects": [],
+    "git.ignoreLimitWarning": true,
+    "github.copilot.chat.checkpoints.enabled": true, // trueで有効, falseで無効"
+    "github.copilot.chat.checkpoints.showFileChanges": true // trueで有効, falseで無効 }
+
+}

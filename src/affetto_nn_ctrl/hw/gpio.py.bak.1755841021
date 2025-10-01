@@ -1,0 +1,166 @@
+from __future__ import annotations
+
+import time
+import os
+try:
+    import gpiod  # type: ignore
+except Exception:  # noqa: BLE001
+    gpiod = None  # type: ignore
+
+class CsLine:
+    """Chip-select abstraction.
+
+    Strategy:
+    - If libgpiod Python binding exposes a usable request API, try to use it.
+    - Otherwise fall back to sysfs GPIO at /sys/class/gpio (export/direction/value).
+    """
+    def __init__(self, pin: int, chip: str = "/dev/gpiochip0", *, active_high: bool = True):
+        self.pin = pin
+        self._active = 1 if active_high else 0
+        self._inactive = 0 if active_high else 1
+        self._use_sysfs = False
+        self._value_path = f"/sys/class/gpio/gpio{pin}/value"
+        self._chip = None
+        self._line = None
+
+        # Try libgpiod simple path (only if module present)
+        if gpiod is not None:
+            try:
+                chip_obj = gpiod.Chip(chip)
+                line = chip_obj.get_line(pin)
+                # If the binding provides request_output on line, use it
+                if hasattr(line, 'request_output'):
+                    try:
+                        # Some bindings accept default_val or default_vals
+                        try:
+                            line.request_output(consumer='cs', default_val=self._inactive)  # type: ignore[arg-type]
+                        except TypeError:
+                            line.request_output(consumer='cs', default_vals=[self._inactive])  # type: ignore[arg-type]
+                        self._chip = chip_obj
+                        self._line = line
+                        self._use_sysfs = False
+                    except Exception:
+                        self._use_sysfs = True
+                else:
+                    # Unknown binding shape — fallback to sysfs
+                    self._use_sysfs = True
+            except Exception:
+                self._use_sysfs = True
+        else:
+            self._use_sysfs = True
+
+        if self._use_sysfs:
+            # Ensure sysfs export
+            gpio_dir = f"/sys/class/gpio/gpio{pin}"
+            if not os.path.exists(gpio_dir):
+                try:
+                    with open('/sys/class/gpio/export', 'w') as f:
+                        f.write(str(pin))
+                except Exception:
+                    # Could already be exported or permission denied
+                    pass
+            # set direction
+            try:
+                with open(os.path.join(gpio_dir, 'direction'), 'w') as f:
+                    f.write('out')
+            except Exception:
+                pass
+            # set initial value
+            try:
+                with open(self._value_path, 'w') as f:
+                    f.write(str(self._inactive))
+            except Exception:
+                pass
+
+        # Ensure inactive state
+        try:
+            self.set_inactive()
+        except Exception:
+            pass
+
+    def _write_sysfs(self, val: int) -> None:
+        try:
+            with open(self._value_path, 'w') as f:
+                f.write('1' if val else '0')
+        except Exception:
+            # best-effort, ignore errors
+            pass
+
+    def set_active(self) -> None:
+        try:
+            with open("/tmp/hw_debug.log", "a") as f:
+                f.write(f"[CsLine] set_active pin={self.pin} gpio_val={self._active}\n")
+        except Exception:
+            pass
+        if self._use_sysfs:
+            self._write_sysfs(self._active)
+            return
+        # libgpiod path: try common APIs
+        try:
+            if hasattr(self._line, 'set_value'):
+                # some bindings expose set_value
+                self._line.set_value(self._active)  # type: ignore[arg-type]
+                return
+        except Exception:
+            pass
+        try:
+            if hasattr(self._line, 'set_values'):
+                self._line.set_values({self.pin: self._active})  # type: ignore[arg-type]
+                return
+        except Exception:
+            pass
+        # fallback: try writing sysfs anyway
+        self._write_sysfs(self._active)
+
+    def set_inactive(self) -> None:
+        try:
+            with open("/tmp/hw_debug.log", "a") as f:
+                f.write(f"[CsLine] set_inactive pin={self.pin} gpio_val={self._inactive}\n")
+        except Exception:
+            pass
+        if self._use_sysfs:
+            self._write_sysfs(self._inactive)
+            return
+        try:
+            if hasattr(self._line, 'set_value'):
+                self._line.set_value(self._inactive)  # type: ignore[arg-type]
+                return
+        except Exception:
+            pass
+        try:
+            if hasattr(self._line, 'set_values'):
+                self._line.set_values({self.pin: self._inactive})  # type: ignore[arg-type]
+                return
+        except Exception:
+            pass
+        self._write_sysfs(self._inactive)
+
+    def pulse(self, dt: float = 1e-6) -> None:
+        self.set_active(); time.sleep(dt); self.set_inactive()
+
+    def set(self, val: int) -> None:
+        if val:
+            self.set_active()
+        else:
+            self.set_inactive()
+
+    def close(self) -> None:
+        try:
+            self.set_inactive()
+        except Exception:  # noqa: BLE001
+            pass
+        # attempt to use libgpiod release
+        try:
+            if hasattr(self._line, 'release'):
+                self._line.release()  # type: ignore[arg-type]
+        except Exception:
+            pass
+        # try to unexport sysfs if used
+        if self._use_sysfs:
+            try:
+                with open('/sys/class/gpio/unexport', 'w') as f:
+                    f.write(str(self.pin))
+            except Exception:
+                pass
+
+__all__ = ["CsLine"]
