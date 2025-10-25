@@ -4,7 +4,7 @@ from __future__ import annotations
 # Rewritten to use MyRobot hardware stack (apps/myrobot_lib) instead of affetto controller.
 # Core algorithm is preserved: load reference trajectory -> generate qdes/dqdes over time ->
 # real-time loop to track with PID -> log data -> repeat per reference file.
-#env PYTHONPATH=/home/hosodalab2/Desktop/MyRobot uv run python -u apps/track_trajectory.py data/myrobot_model_MixAll/trained_model.joblib -r data/recorded_trajectory/csv/reference_trajectory_5.csv -T 20 -n 1 -v
+#env PYTHONPATH=/home/hosodalab2/Desktop/MyRobot uv run python -u apps/track_trajectory.py data/MixAll.seed42.preview.smalltrain.step06/20250927T155010/trained_model.joblib -r data/recorded_trajectory/csv/reference_trajectory_5.csv -T 10 -n 1 -v
 
 
 import argparse
@@ -257,6 +257,8 @@ def track_motion_trajectory(
             include_dqdes = bool(getattr(params, "include_dqdes", False)) if params is not None else False
         except Exception:
             include_dqdes = False
+        # Force dqdes OFF for fair comparison as requested
+        include_dqdes = False
         try:
             preview_time = float(getattr(params, "preview_step", 0)) * float(getattr(params, "dt", 0.0)) if params is not None else 0.0
         except Exception:
@@ -482,9 +484,7 @@ def track_motion_trajectory(
                 # previewed references
                 qdes_prev = qdes_vec_func(t + preview_time)[jnts]
                 feats.append(qdes_prev)
-                if include_dqdes:
-                    dqdes_prev = dqdes_vec_func(t + preview_time)[jnts]
-                    feats.append(dqdes_prev)
+                # dqdes feature is intentionally disabled for this experiment
                 X = np.atleast_2d(np.concatenate(feats))
                 # Validate dimension
                 if expected_n_features is not None and X.shape[1] != int(expected_n_features):

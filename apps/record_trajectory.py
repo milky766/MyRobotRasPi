@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #source /home/hosodalab2/Desktop/MyRobot/.venv-fix/bin/activate
 
-#uv run python -m apps.record_trajectory -T 30 -v
+#uv run python -m apps.record_trajectory -T 10 -v
 
 from __future__ import annotations
 

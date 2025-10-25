@@ -1,0 +1,34 @@
+[model.performance]
+model_path = "data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/trained_model.joblib"
+score = { mean = 0.9911855611439252, std = 0.008489595620918356, argmax = 5, argmin = 0 }
+
+[[model.performance.scores]]
+test_dataset = "data/myrobot/hirai/csv/20250925/step/fast/motion_data_025.csv"
+plot_path = "data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_000"
+score = 0.9733042094754614
+
+[[model.performance.scores]]
+test_dataset = "data/myrobot/hirai/csv/20250925/step/middle/motion_data_068.csv"
+plot_path = "data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_001"
+score = 0.9936541122034488
+
+[[model.performance.scores]]
+test_dataset = "data/myrobot/hirai/csv/20250925/step/slow/motion_data_013.csv"
+plot_path = "data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_002"
+score = 0.9928347998692059
+
+[[model.performance.scores]]
+test_dataset = "data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_065.csv"
+plot_path = "data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_003"
+score = 0.990638085508595
+
+[[model.performance.scores]]
+test_dataset = "data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_026.csv"
+plot_path = "data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_004"
+score = 0.9975728658589179
+
+[[model.performance.scores]]
+test_dataset = "data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_034.csv"
+plot_path = "data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_005"
+score = 0.9991092939479219
+

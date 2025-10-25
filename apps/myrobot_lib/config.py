@@ -18,7 +18,7 @@ JOINT_MAX = 60.0
 # Valve bounds and mapping defaults (percent)
 VALVE_MIN = 20.0
 VALVE_MAX = 100.0
-VALVE_CENTER = 50.0
+VALVE_CENTER = 60.0
 VALVE_SPAN = 40.0
 
 # Experiment / run defaults
@@ -29,9 +29,9 @@ DEFAULT_OUTPUT_PREFIX = 'myrobot_motion'
 DEFAULT_N_REPEAT = 3
 DEFAULT_SEED = 42
 
-# Controller defaults (PID)
-DEFAULT_KP = 0.1
-DEFAULT_KI = 0.04
+# Controller defaults (PID) - unified with collect_data_myrobot.py
+DEFAULT_KP = 0.15
+DEFAULT_KI = 0.25
 DEFAULT_KD = 0.01
 INCREMENTAL_VALVE_DEFAULT = True
 INCR_GAIN_DEFAULT = 1.0

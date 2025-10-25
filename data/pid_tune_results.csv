@@ -1,0 +1,2 @@
+timestamp,kp,ki,kd,rmse,overshoot_pct,rise_time_10_90,settling_time_2_pct,steady_state_error,csv_path
+2025-10-05 17:34:22,0.15,0.25,0.01,20.0000,-100.00,,5.9990,20.0000,pid_tune_20251005_173414.csv

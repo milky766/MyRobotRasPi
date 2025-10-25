@@ -1,0 +1,2 @@
+file,n,duration_ms,mae_deg,rmse_deg,bias_deg,max_abs_deg,p95_abs_deg,r2,nrmse_std,nrmse_range
+tracked_trajectory_3_1.csv,600,19966.0,1.9978,2.4653,1.8982,6.6933,4.4895,0.944408,0.235779,0.064779

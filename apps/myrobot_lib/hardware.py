@@ -63,9 +63,13 @@ def open_devices(i2c_bus: int = cfg.I2C_BUS, ldc_addrs: list[int] | None = None)
                     s = LDC1614(bus, addr)
                     if s.init():
                         ldc_sensors.append(s)
-                except Exception:
-                    pass
-        except Exception:
+                        print(f"[INFO] LDC at {hex(addr)} initialized successfully")
+                    else:
+                        print(f"[WARN] LDC at {hex(addr)} init() returned False")
+                except Exception as e:
+                    print(f"[WARN] LDC at {hex(addr)} failed: {e}")
+        except Exception as e:
+            print(f"[ERROR] LDC initialization failed: {e}")
             ldc_sensors = []
 
     return dac, adc, enc, ldc_sensors

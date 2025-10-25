@@ -261,12 +261,17 @@ def plot_csv(csv_path: str) -> str:
     fmt = _os.environ.get('PLOT_FORMAT', 'png').lower()
     ext = 'pdf' if fmt == 'pdf' else 'png'
     out = csv_path.rsplit('.', 1)[0] + f'.{ext}'
-    # graph へ直接保存（.../data/tracked_trajectory/csv -> .../graph）
+    # graph へ直接保存
+    # ルール:
+    #   .../data/<dataset>/csv/<date>/<name>.csv -> .../data/<dataset>/graph/<date>/<name>.<ext>
+    # dataset は tracked_trajectory や mlp_esn などに対応。
     try:
         import pathlib as _pl
         p = _pl.Path(csv_path)
         parts = [s for s in p.parts]
-        if 'data' in parts and 'tracked_trajectory' in parts and 'csv' in parts:
+        # 対象データセット
+        datasets = {'tracked_trajectory', 'mlp_esn'}
+        if 'data' in parts and 'csv' in parts and any(ds in parts for ds in datasets):
             new_parts = []
             swapped = False
             for s in parts:

@@ -1,0 +1,144 @@
+2025-09-27 15:50:10,917 (event_logging:164) [DEBUG]: Start event logging
+2025-09-27 15:50:10,918 (event_logging:165) [DEBUG]: Logger name: apps.train_model.step6
+2025-09-27 15:50:10,918 (event_logging:166) [DEBUG]: Log filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/train_model.log
+2025-09-27 15:50:10,918 (event_logging:168) [DEBUG]: Command: python apps/train_model.py -v data/myrobot/hirai/csv/20250925/step/fast data/myrobot/hirai/csv/20250925/step/middle data/myrobot/hirai/csv/20250925/step/slow data/myrobot/hirai/csv/20250925/trapezoid/fast data/myrobot/hirai/csv/20250925/trapezoid/middle data/myrobot/hirai/csv/20250925/trapezoid/slow -j 5 --train-size 0.2 --seed 35 -m data/myrobot_model/config/model.toml -a preview-ref.step6 -s std -r mlp.option-list --include-tension --label MixAll.seed42.preview.smalltrain.step06 --overwrite
+2025-09-27 15:50:10,919 (data_handling:162) [DEBUG]: Directory created: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010
+2025-09-27 15:50:10,922 (data_handling:152) [DEBUG]: Symlink created: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/latest -> /mnt/c/Users/HosodaLab2/University/Reserch/reservoir/MyRobotRasPi/desktop/data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010
+2025-09-27 15:50:10,923 (data_handling:162) [DEBUG]: Directory created: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/config
+2025-09-27 15:50:10,931 (data_handling:180) [DEBUG]: Model config copied: None -> data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/config
+2025-09-27 15:50:10,932 (train_model:71) [DEBUG]: Resolved active joints: [5]
+2025-09-27 15:50:10,934 (train_model:75) [DEBUG]: Model config file loaded: data/myrobot_model/config/model.toml
+2025-09-27 15:50:10,934 (train_model:78) [DEBUG]: Loading datasets with following condition:
+2025-09-27 15:50:10,934 (train_model:79) [DEBUG]:      Path list: ['data/myrobot/hirai/csv/20250925/step/fast', 'data/myrobot/hirai/csv/20250925/step/middle', 'data/myrobot/hirai/csv/20250925/step/slow', 'data/myrobot/hirai/csv/20250925/trapezoid/fast', 'data/myrobot/hirai/csv/20250925/trapezoid/middle', 'data/myrobot/hirai/csv/20250925/trapezoid/slow']
+2025-09-27 15:50:10,935 (train_model:80) [DEBUG]:   glob pattern: **/*.csv
+2025-09-27 15:50:11,030 (model_utility:667) [DEBUG]: Loading datasets from ['data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_008.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_064.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_055.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_067.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_042.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_097.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_025.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_003.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_062.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_061.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_090.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_016.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_029.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_000.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_049.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_066.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_088.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_050.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_066.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_072.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_082.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_087.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_051.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_098.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_039.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_033.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_059.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_083.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_052.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_036.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_023.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_047.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_002.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_029.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_006.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_094.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_060.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_092.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_075.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_043.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_004.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_065.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_075.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_026.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_087.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_031.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_050.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_073.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_069.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_023.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_061.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_027.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_069.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_030.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_038.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_015.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_096.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_076.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_088.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_087.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_014.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_045.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_054.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_044.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_080.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_050.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_011.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_003.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_099.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_053.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_054.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_016.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_035.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_062.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_034.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_001.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_019.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_067.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_066.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_077.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_041.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_043.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_061.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_048.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_069.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_043.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_079.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_051.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_091.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_072.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_056.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_094.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_047.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_052.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_074.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_074.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_060.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_082.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_098.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_067.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_026.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_059.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_044.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_085.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_099.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_044.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_032.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_095.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_044.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_015.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_071.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_019.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_007.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_029.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_074.csv', 'data/myrobot/hirai/csv/20250925/step/fast/motion_data_090.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_024.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_084.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_091.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_096.csv']
+2025-09-27 15:50:12,393 (model_utility:671) [INFO]: 120 datasets loaded in total
+2025-09-27 15:50:12,393 (model_utility:588) [DEBUG]: Loaded data adapter: PreviewRef(PreviewRefParams(active_joints=[5], dt=0.03333333333, ctrl_step=1, preview_step=6, include_dqdes=False, use_indexed_columns=False, include_tension=True))
+2025-09-27 15:50:12,393 (train_model:97) [INFO]: Adapter include_tension overridden: True
+2025-09-27 15:50:12,394 (model_utility:598) [DEBUG]: Loaded scaler: StandardScaler()
+2025-09-27 15:50:12,394 (model_utility:606) [DEBUG]: Loaded regressor: MLPRegressor(activation='tanh', hidden_layer_sizes=(100, 100), max_iter=1000)
+2025-09-27 15:50:12,394 (train_model:103) [INFO]: Training model...
+2025-09-27 15:50:12,396 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_008.csv
+2025-09-27 15:50:12,397 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_064.csv
+2025-09-27 15:50:12,398 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_055.csv
+2025-09-27 15:50:12,400 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_067.csv
+2025-09-27 15:50:12,401 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_042.csv
+2025-09-27 15:50:12,403 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_097.csv
+2025-09-27 15:50:12,405 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_025.csv
+2025-09-27 15:50:12,406 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_003.csv
+2025-09-27 15:50:12,408 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_062.csv
+2025-09-27 15:50:12,410 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_061.csv
+2025-09-27 15:50:12,412 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_090.csv
+2025-09-27 15:50:12,414 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_016.csv
+2025-09-27 15:50:12,415 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_029.csv
+2025-09-27 15:50:12,417 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_000.csv
+2025-09-27 15:50:12,419 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_049.csv
+2025-09-27 15:50:12,421 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_066.csv
+2025-09-27 15:50:12,422 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_088.csv
+2025-09-27 15:50:12,423 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_050.csv
+2025-09-27 15:50:12,425 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_066.csv
+2025-09-27 15:50:12,427 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_072.csv
+2025-09-27 15:50:12,428 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_082.csv
+2025-09-27 15:50:12,430 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_087.csv
+2025-09-27 15:50:12,432 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_051.csv
+2025-09-27 15:50:12,434 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_098.csv
+2025-09-27 15:50:12,436 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_039.csv
+2025-09-27 15:50:12,438 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_033.csv
+2025-09-27 15:50:12,440 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_059.csv
+2025-09-27 15:50:12,442 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_083.csv
+2025-09-27 15:50:12,443 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_052.csv
+2025-09-27 15:50:12,445 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_036.csv
+2025-09-27 15:50:12,448 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_023.csv
+2025-09-27 15:50:12,450 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_047.csv
+2025-09-27 15:50:12,452 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_002.csv
+2025-09-27 15:50:12,454 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_029.csv
+2025-09-27 15:50:12,456 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_006.csv
+2025-09-27 15:50:12,458 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_094.csv
+2025-09-27 15:50:12,463 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_060.csv
+2025-09-27 15:50:12,468 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_092.csv
+2025-09-27 15:50:12,471 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_075.csv
+2025-09-27 15:50:12,474 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_043.csv
+2025-09-27 15:50:12,478 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_004.csv
+2025-09-27 15:50:12,481 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_065.csv
+2025-09-27 15:50:12,484 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_075.csv
+2025-09-27 15:50:12,488 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_026.csv
+2025-09-27 15:50:12,490 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_087.csv
+2025-09-27 15:50:12,493 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_031.csv
+2025-09-27 15:50:12,497 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_050.csv
+2025-09-27 15:50:12,500 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_073.csv
+2025-09-27 15:50:12,504 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_069.csv
+2025-09-27 15:50:12,509 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_023.csv
+2025-09-27 15:50:12,513 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_061.csv
+2025-09-27 15:50:12,516 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_027.csv
+2025-09-27 15:50:12,521 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_069.csv
+2025-09-27 15:50:12,524 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_030.csv
+2025-09-27 15:50:12,527 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_038.csv
+2025-09-27 15:50:12,531 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_015.csv
+2025-09-27 15:50:12,534 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_096.csv
+2025-09-27 15:50:12,537 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_076.csv
+2025-09-27 15:50:12,541 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_088.csv
+2025-09-27 15:50:12,544 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_087.csv
+2025-09-27 15:50:12,547 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_014.csv
+2025-09-27 15:50:12,551 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_045.csv
+2025-09-27 15:50:12,555 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_054.csv
+2025-09-27 15:50:12,558 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_044.csv
+2025-09-27 15:50:12,562 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_080.csv
+2025-09-27 15:50:12,565 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_050.csv
+2025-09-27 15:50:12,568 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_011.csv
+2025-09-27 15:50:12,573 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_003.csv
+2025-09-27 15:50:12,576 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_099.csv
+2025-09-27 15:50:12,579 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_053.csv
+2025-09-27 15:50:12,584 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_054.csv
+2025-09-27 15:50:12,587 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_016.csv
+2025-09-27 15:50:12,591 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_035.csv
+2025-09-27 15:50:12,595 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_062.csv
+2025-09-27 15:50:12,598 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_034.csv
+2025-09-27 15:50:12,602 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_001.csv
+2025-09-27 15:50:12,612 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_019.csv
+2025-09-27 15:50:12,616 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_067.csv
+2025-09-27 15:50:12,619 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_066.csv
+2025-09-27 15:50:12,624 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_077.csv
+2025-09-27 15:50:12,627 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_041.csv
+2025-09-27 15:50:12,630 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_043.csv
+2025-09-27 15:50:12,634 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_061.csv
+2025-09-27 15:50:12,638 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_048.csv
+2025-09-27 15:50:12,641 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_069.csv
+2025-09-27 15:50:12,645 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_043.csv
+2025-09-27 15:50:12,649 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_079.csv
+2025-09-27 15:50:12,653 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_051.csv
+2025-09-27 15:50:12,658 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_091.csv
+2025-09-27 15:50:12,662 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_072.csv
+2025-09-27 15:50:12,665 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_056.csv
+2025-09-27 15:50:12,670 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_094.csv
+2025-09-27 15:50:12,673 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_047.csv
+2025-09-27 15:50:12,676 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_052.csv
+2025-09-27 15:50:12,681 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_074.csv
+2025-09-27 15:50:12,685 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_074.csv
+2025-09-27 15:50:12,688 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_060.csv
+2025-09-27 15:50:12,695 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_082.csv
+2025-09-27 15:50:12,698 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_098.csv
+2025-09-27 15:50:12,702 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_067.csv
+2025-09-27 15:50:12,705 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_026.csv
+2025-09-27 15:50:12,709 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_059.csv
+2025-09-27 15:50:12,712 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_044.csv
+2025-09-27 15:50:12,716 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_085.csv
+2025-09-27 15:50:12,720 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_099.csv
+2025-09-27 15:50:12,723 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_044.csv
+2025-09-27 15:50:12,727 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_032.csv
+2025-09-27 15:50:12,730 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_095.csv
+2025-09-27 15:50:12,734 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_044.csv
+2025-09-27 15:50:12,737 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_015.csv
+2025-09-27 15:50:12,741 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_071.csv
+2025-09-27 15:50:12,745 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_019.csv
+2025-09-27 15:50:12,748 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_007.csv
+2025-09-27 15:50:12,752 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_029.csv
+2025-09-27 15:50:12,755 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_074.csv
+2025-09-27 15:50:12,758 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_090.csv
+2025-09-27 15:50:12,762 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_024.csv
+2025-09-27 15:50:12,766 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_084.csv
+2025-09-27 15:50:12,770 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_091.csv
+2025-09-27 15:50:12,774 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_096.csv
+2025-09-27 15:50:12,774 (model_utility:729) [DEBUG]: x_train.shape = (359160, 7)
+2025-09-27 15:50:12,774 (model_utility:730) [DEBUG]: y_train.shape = (359160, 2)
+2025-09-27 15:50:47,128 (train_model:105) [DEBUG]: Training has done
+2025-09-27 15:50:47,137 (train_model:120) [INFO]: Trained model saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/trained_model.joblib

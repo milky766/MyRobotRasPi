@@ -1,0 +1,51 @@
+2025-09-27 15:50:47,145 (event_logging:164) [DEBUG]: Start event logging
+2025-09-27 15:50:47,146 (event_logging:165) [DEBUG]: Logger name: apps.calculate_score.step6
+2025-09-27 15:50:47,146 (event_logging:166) [DEBUG]: Log filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/calculate_score.log
+2025-09-27 15:50:47,146 (event_logging:168) [DEBUG]: Command: python apps/calculate_score.py data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/trained_model.joblib -v -d data/myrobot/hirai/csv/20250925/step/fast data/myrobot/hirai/csv/20250925/step/middle data/myrobot/hirai/csv/20250925/step/slow data/myrobot/hirai/csv/20250925/trapezoid/fast data/myrobot/hirai/csv/20250925/trapezoid/middle data/myrobot/hirai/csv/20250925/trapezoid/slow --test-size 1 --seed 35 --include-tension -e pdf --overwrite
+2025-09-27 15:50:47,147 (data_handling:162) [DEBUG]: Directory created: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010
+2025-09-27 15:50:47,155 (calculate_score:160) [INFO]: Trained model is loaded: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/trained_model.joblib
+2025-09-27 15:50:47,155 (calculate_score:163) [DEBUG]: Loading datasets with following condition:
+2025-09-27 15:50:47,155 (calculate_score:164) [DEBUG]:      Path list: ['data/myrobot/hirai/csv/20250925/step/fast', 'data/myrobot/hirai/csv/20250925/step/middle', 'data/myrobot/hirai/csv/20250925/step/slow', 'data/myrobot/hirai/csv/20250925/trapezoid/fast', 'data/myrobot/hirai/csv/20250925/trapezoid/middle', 'data/myrobot/hirai/csv/20250925/trapezoid/slow']
+2025-09-27 15:50:47,155 (calculate_score:165) [DEBUG]:   glob pattern: **/*.csv
+2025-09-27 15:50:47,256 (model_utility:667) [DEBUG]: Loading datasets from ['data/myrobot/hirai/csv/20250925/step/fast/motion_data_025.csv', 'data/myrobot/hirai/csv/20250925/step/middle/motion_data_068.csv', 'data/myrobot/hirai/csv/20250925/step/slow/motion_data_013.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_065.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_026.csv', 'data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_034.csv']
+2025-09-27 15:50:47,375 (model_utility:671) [INFO]: 6 datasets loaded in total
+2025-09-27 15:50:47,376 (calculate_score:183) [DEBUG]: Calculated scores data counter initialized with 0
+2025-09-27 15:50:47,376 (calculate_score:191) [DEBUG]: Performance plots counter initialized with 0
+2025-09-27 15:50:47,378 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/fast/motion_data_025.csv
+2025-09-27 15:50:47,398 (calculate_score:204) [INFO]: [1/6] Calculated score: 0.9733042094754614
+2025-09-27 15:50:47,413 (plot_utility:77) [DEBUG]: Making filename compatible to file system:
+2025-09-27 15:50:47,414 (plot_utility:78) [DEBUG]:        given filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_000/prediction_05
+2025-09-27 15:50:47,414 (plot_utility:79) [DEBUG]:   compatible filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_000/prediction_05
+2025-09-27 15:50:47,921 (plot_utility:67) [INFO]: Figure saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_000/pdf/prediction_05.pdf
+2025-09-27 15:50:47,923 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/middle/motion_data_068.csv
+2025-09-27 15:50:47,951 (calculate_score:204) [INFO]: [2/6] Calculated score: 0.9936541122034488
+2025-09-27 15:50:47,967 (plot_utility:77) [DEBUG]: Making filename compatible to file system:
+2025-09-27 15:50:47,969 (plot_utility:78) [DEBUG]:        given filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_001/prediction_05
+2025-09-27 15:50:47,970 (plot_utility:79) [DEBUG]:   compatible filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_001/prediction_05
+2025-09-27 15:50:48,508 (plot_utility:67) [INFO]: Figure saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_001/pdf/prediction_05.pdf
+2025-09-27 15:50:48,510 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/step/slow/motion_data_013.csv
+2025-09-27 15:50:48,541 (calculate_score:204) [INFO]: [3/6] Calculated score: 0.9928347998692059
+2025-09-27 15:50:48,558 (plot_utility:77) [DEBUG]: Making filename compatible to file system:
+2025-09-27 15:50:48,562 (plot_utility:78) [DEBUG]:        given filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_002/prediction_05
+2025-09-27 15:50:48,562 (plot_utility:79) [DEBUG]:   compatible filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_002/prediction_05
+2025-09-27 15:50:49,097 (plot_utility:67) [INFO]: Figure saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_002/pdf/prediction_05.pdf
+2025-09-27 15:50:49,098 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/fast/motion_data_065.csv
+2025-09-27 15:50:49,128 (calculate_score:204) [INFO]: [4/6] Calculated score: 0.990638085508595
+2025-09-27 15:50:49,144 (plot_utility:77) [DEBUG]: Making filename compatible to file system:
+2025-09-27 15:50:49,147 (plot_utility:78) [DEBUG]:        given filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_003/prediction_05
+2025-09-27 15:50:49,147 (plot_utility:79) [DEBUG]:   compatible filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_003/prediction_05
+2025-09-27 15:50:49,723 (plot_utility:67) [INFO]: Figure saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_003/pdf/prediction_05.pdf
+2025-09-27 15:50:49,725 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/middle/motion_data_026.csv
+2025-09-27 15:50:49,750 (calculate_score:204) [INFO]: [5/6] Calculated score: 0.9975728658589179
+2025-09-27 15:50:49,764 (plot_utility:77) [DEBUG]: Making filename compatible to file system:
+2025-09-27 15:50:49,765 (plot_utility:78) [DEBUG]:        given filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_004/prediction_05
+2025-09-27 15:50:49,765 (plot_utility:79) [DEBUG]:   compatible filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_004/prediction_05
+2025-09-27 15:50:50,273 (plot_utility:67) [INFO]: Figure saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_004/pdf/prediction_05.pdf
+2025-09-27 15:50:50,275 (model_utility:693) [DEBUG]: Loaded dataset: data/myrobot/hirai/csv/20250925/trapezoid/slow/motion_data_034.csv
+2025-09-27 15:50:50,303 (calculate_score:204) [INFO]: [6/6] Calculated score: 0.9991092939479219
+2025-09-27 15:50:50,316 (plot_utility:77) [DEBUG]: Making filename compatible to file system:
+2025-09-27 15:50:50,316 (plot_utility:78) [DEBUG]:        given filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_005/prediction_05
+2025-09-27 15:50:50,316 (plot_utility:79) [DEBUG]:   compatible filename: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_005/prediction_05
+2025-09-27 15:50:50,856 (plot_utility:67) [INFO]: Figure saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/plots_005/pdf/prediction_05.pdf
+2025-09-27 15:50:50,859 (calculate_score:71) [INFO]: Calculated scores saved: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/scores.toml
+2025-09-27 15:50:52,141 (calculate_score:133) [INFO]: Saved merged plots: data/myrobot_model/trained_model/MixAll.seed42.preview.smalltrain.step06/20250927T155010/scores_000/merged_prediction_05.pdf

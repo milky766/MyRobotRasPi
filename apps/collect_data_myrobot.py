@@ -6,7 +6,7 @@ and a RandomTrajectory generator from `affetto_nn_ctrl.control_utility` to produ
 reference updates. Produces CSV logs compatible with affetto dataset conventions.
 
 Run example: 
-uv run python apps/collect_data_myrobot.py --traj trapezoidal --speed slow -T 100 -n 1 -o data/myrobot
+uv run python apps/collect_data_myrobot.py --traj trapezoidal --speed slow -T 10 -n 1 -o data/myrobot
 """
 
 
