@@ -1,0 +1,38 @@
+[
+  {
+    "rmse": 2.569080293581443,
+    "mae": 2.023944915840389,
+    "max_abs_err": 7.734375,
+    "p95_abs_err": 6.507885753676469,
+    "n": 120,
+    "mode": "PID+CSV",
+    "csv": "/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135115.csv"
+  },
+  {
+    "rmse": 4.559516479386993,
+    "mae": 3.9705819360498205,
+    "max_abs_err": 10.727942095588237,
+    "p95_abs_err": 9.73879577205882,
+    "n": 119,
+    "mode": "MLP+CSV",
+    "csv": "/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135125.csv"
+  },
+  {
+    "rmse": 2.9549033004491223,
+    "mae": 2.291136844316325,
+    "max_abs_err": 9.228515625,
+    "p95_abs_err": 6.879953124999996,
+    "n": 120,
+    "mode": "PID+ESN",
+    "csv": "/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135137.csv"
+  },
+  {
+    "rmse": 4.112619199831518,
+    "mae": 3.5689734261270796,
+    "max_abs_err": 10.815832720588237,
+    "p95_abs_err": 8.97802734375,
+    "n": 120,
+    "mode": "MLP+ESN",
+    "csv": "/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135149.csv"
+  }
+]

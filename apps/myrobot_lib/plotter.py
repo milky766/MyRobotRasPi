@@ -134,8 +134,80 @@ def plot_csv(csv_path: str) -> str:
     # plot encoder first so legend shows 'q' before 'qdes'
     # make markers larger and lines thicker so measured angle is visible
     # user requested: q -> 赤, qdes -> 緑
-    ax1.plot(sec, enc, '-o', color='red', linewidth=1.5, markersize=4, label='q')
-    ax1.plot(sec, q_des, '-o', color='tab:green', linewidth=1.2, markersize=3, alpha=0.95, label='qdes')
+    h_q, = ax1.plot(sec, enc, '-o', color='red', linewidth=1.5, markersize=4, label='q')
+    # 表記を qdes(ESN) に変更
+    h_esn, = ax1.plot(sec, q_des, '-o', color='tab:green', linewidth=1.2, markersize=3, alpha=0.95, label='qdes(ESN)')
+
+    # If the user set PLOT_REF_CSV (environment variable), try to read the original
+    # reference trajectory and plot it as qdes(original) (gray dashed), so the
+    # top panel (main figure) contains the same reference overlay as the
+    # angle-only plot.
+    h_ref = None
+    try:
+        import os as _os
+        ref_path = _os.environ.get('PLOT_REF_CSV')
+        # 補助: メタデータJSONから参照軌道を自動検出
+        if not ref_path:
+            import pathlib as _pl, json as _json
+            meta_path = _pl.Path(csv_path).with_suffix('').as_posix() + '_meta.json'
+            if _os.path.exists(meta_path):
+                try:
+                    with open(meta_path, 'r', encoding='utf-8') as mf:
+                        meta = _json.load(mf)
+                    args = meta.get('args', {}) if isinstance(meta, dict) else {}
+                    cand = args.get('trajectory_csv') or args.get('reference_csv') or args.get('ref_csv')
+                    if cand and _os.path.exists(cand):
+                        ref_path = cand
+                except Exception:
+                    pass
+        if ref_path and _os.path.exists(ref_path):
+            # parse a simple CSV with ms and enc_deg columns, skipping leading comments
+            try:
+                with open(ref_path, 'r', encoding='utf-8') as rf:
+                    lines = rf.readlines()
+                start_idx = 0
+                while start_idx < len(lines) and lines[start_idx].lstrip().startswith('#'):
+                    start_idx += 1
+                if start_idx < len(lines):
+                    import io as _io
+                    rdr = csv.DictReader(_io.StringIO(''.join(lines[start_idx:])))
+                    ref_sec = []
+                    ref_enc_deg = []
+                    for r in rdr:
+                        try:
+                            ms = float(r.get('ms', ''))
+                            qd = float(r.get('enc_deg', r.get('q_des', '')))
+                        except Exception:
+                            continue
+                        ref_sec.append(ms / 1000.0)
+                        ref_enc_deg.append(qd)
+                    if ref_sec and ref_enc_deg:
+                        h_ref, = ax1.plot(ref_sec, ref_enc_deg, color='gray', linestyle='--', linewidth=2, alpha=0.8, label='qdes(original)')
+            except Exception:
+                # best-effort: don't fail plotting if ref file can't be parsed
+                h_ref = None
+    except Exception:
+        h_ref = None
+
+    # Build legend in the requested order: q, qdes (ESN), qdes(original), and add ○ disturbance
+    try:
+        handles = []
+        labels = []
+        if 'h_q' in locals() and h_q is not None:
+            handles.append(h_q); labels.append('q')
+        if 'h_esn' in locals() and h_esn is not None:
+            handles.append(h_esn); labels.append('qdes(ESN)')
+        if 'h_ref' in locals() and h_ref is not None:
+            handles.append(h_ref); labels.append('qdes(original)')
+        # Add disturbance (hollow circle, no line)
+        import matplotlib.lines as _mlines
+        disturbance = _mlines.Line2D([], [], color='black', marker='o', markerfacecolor='none', markeredgecolor='black', linestyle='None', markersize=6, label='disturbance')
+        handles.append(disturbance)
+        labels.append('disturbance')
+        ax1.legend(handles=handles, labels=labels, loc='upper left')
+    except Exception:
+        # fallback to default legend behavior
+        ax1.legend(loc='upper left')
 
     # expand y-limits to include both series (ignore NaNs)
     try:
@@ -148,8 +220,7 @@ def plot_csv(csv_path: str) -> str:
             ax1.set_ylim(lo - rng, hi + rng)
     except Exception:
         pass
-    ax1.legend(loc='upper right')
-    ax1.set_title('Angle [deg]')
+    ax1.set_ylabel('Angle [deg]')
     # make left y-axis have 5 major ticks
     ax1.yaxis.set_major_locator(mticker.MaxNLocator(nbins=5))
 
@@ -158,11 +229,12 @@ def plot_csv(csv_path: str) -> str:
     ax2 = fig.add_subplot(n_subplots, 1, 2)
     # plot measured and desired angular velocity with distinct colors
     # user requested: dq -> 赤, dqdes -> 緑
+    # ユーザー要望: dqdesは表示しない
     ax2.plot(sec, dq_meas, '-o', color='red', label='dq')
-    if not all(np.isnan(x) for x in dq_des):
-        ax2.plot(sec, dq_des, '-', color='tab:green', alpha=0.8, label='dqdes')
-    ax2.legend(loc='upper right')
-    ax2.set_title('Angle Velocity [deg/s]')
+    # if not all(np.isnan(x) for x in dq_des):
+    #     ax2.plot(sec, dq_des, '-', color='tab:green', alpha=0.8, label='dqdes')
+    ax2.legend(loc='upper left')
+    ax2.set_ylabel('Angle Velocity [deg/s]')
     ax2.yaxis.set_major_locator(mticker.MaxNLocator(nbins=5))
 
     # Valve command plot
@@ -170,8 +242,8 @@ def plot_csv(csv_path: str) -> str:
     # user requested: c+ -> 黄色, c- -> 青（凡例は c^+, c^-）
     ax3.plot(sec, a, '-o', color='gold', label=r'c$^{+}$')
     ax3.plot(sec, b, '-o', color='tab:blue', label=r'c$^{-}$')
-    ax3.legend(loc='upper right')
-    ax3.set_title('Valve Command [V]')
+    ax3.legend(loc='upper left')
+    ax3.set_ylabel('Valve Command [V]')
     try:
         # 指示により縦軸を 1V〜5V に設定
         ax3.set_ylim(1.0, 5.0)
@@ -188,8 +260,8 @@ def plot_csv(csv_path: str) -> str:
         ax4.plot(sec, p1, '-o', color='tab:blue', label=r'p$^{-}$')
     if p0 is None and p1 is None:
         ax4.text(0.5, 0.5, 'No pressure (ADC) data', ha='center', va='center')
-    ax4.legend(loc='upper right')
-    ax4.set_title('Pressure [kPa]')
+    ax4.legend(loc='upper left')
+    ax4.set_ylabel('Pressure [kPa]')
     ax4.yaxis.set_major_locator(mticker.MaxNLocator(nbins=5))
 
     # Tension sensors
@@ -220,38 +292,40 @@ def plot_csv(csv_path: str) -> str:
                 ax5.plot(sec, vals, '-o', label=lab, color=col)
             else:
                 ax5.plot(sec, vals, '-o', label=lab)
-        # make Ta/Tb legend vertical (one column) and invert order (上下を入れ替え)
+        # make Ta/Tb legend vertical (one column) and reorder: T^+ above T^-
+        # ユーザー要望: 凡例でT+ が上、T- が下になるように変更
         handles, labels = ax5.get_legend_handles_labels()
         if handles and labels:
-            # If both Ta and Tb are present, ensure Ta appears above Tb in the legend.
-            # Preserve other labels' relative order but place Ta then Tb at the top.
+            # T^+ (Ta) と T^- (Tb) がある場合、T^+ を上にする
             try:
                 lbls = list(labels)
                 hds = list(handles)
-                if 'Ta' in lbls and 'Tb' in lbls:
-                    ta_idx = lbls.index('Ta')
-                    tb_idx = lbls.index('Tb')
-                    # Collect other (handle,label) pairs in original order excluding Ta/Tb
-                    others = [(h, l) for (h, l) in zip(hds, lbls) if l not in ('Ta', 'Tb')]
+                tplus_label = r'T$^{+}$'
+                tminus_label = r'T$^{-}$'
+                if tplus_label in lbls and tminus_label in lbls:
+                    tp_idx = lbls.index(tplus_label)
+                    tm_idx = lbls.index(tminus_label)
+                    # Collect other (handle,label) pairs in original order excluding T^+/T^-
+                    others = [(h, l) for (h, l) in zip(hds, lbls) if l not in (tplus_label, tminus_label)]
                     new_order = []
-                    new_order.append((hds[ta_idx], lbls[ta_idx]))
-                    new_order.append((hds[tb_idx], lbls[tb_idx]))
+                    new_order.append((hds[tp_idx], lbls[tp_idx]))  # T^+ first
+                    new_order.append((hds[tm_idx], lbls[tm_idx]))  # T^- second
                     new_order.extend(others)
                     new_handles, new_labels = zip(*new_order) if new_order else ([], [])
-                    ax5.legend(new_handles, new_labels, loc='upper right', ncol=1, fontsize='small')
+                    ax5.legend(new_handles, new_labels, loc='upper left', ncol=1, fontsize='small')
                 else:
-                    # Fallback: reverse order as before
-                    ax5.legend(handles[::-1], labels[::-1], loc='upper right', ncol=1, fontsize='small')
+                    # If labels don't match exactly (old format or fallback), keep original order
+                    ax5.legend(handles, labels, loc='upper left', ncol=1, fontsize='small')
             except Exception:
-                # Best-effort fallback to previous behavior on any error
-                ax5.legend(handles[::-1], labels[::-1], loc='upper right', ncol=1, fontsize='small')
+                # Best-effort fallback to default legend
+                ax5.legend(handles, labels, loc='upper left', ncol=1, fontsize='small')
         else:
-            ax5.legend(loc='upper right', ncol=1, fontsize='small')
+            ax5.legend(loc='upper left', ncol=1, fontsize='small')
     else:
         ax5.text(0.5, 0.5, 'No tension (LDC) data', ha='center', va='center')
     ax5.set_xlabel('Time [s]')
     # display units in micro-Henry as requested
-    ax5.set_title('Tension [μH]')
+    ax5.set_ylabel('Tension [μH]')
     ax5.yaxis.set_major_locator(mticker.MaxNLocator(nbins=5))
 
     plt.tight_layout()
@@ -296,6 +370,25 @@ def plot_csv(csv_path: str) -> str:
         print(f'[WARN] failed to save main plot: {e}', flush=True)
         out = ''
 
+    # If we saved a PNG, also attempt to save a PDF copy next to it (best-effort).
+    try:
+        if out and ext == 'png':
+            out_pdf = out.rsplit('.', 1)[0] + '.pdf'
+            try:
+                plt.savefig(out_pdf, format='pdf', dpi=150)
+                print(f'[INFO] PDF copy of main plot saved: {out_pdf}', flush=True)
+            except Exception as _e:
+                # non-fatal: log and continue
+                print(f'[WARN] failed to save PDF copy of main plot: {_e}', flush=True)
+    except Exception:
+        # ignore any unexpected errors in the PDF-save best-effort block
+        pass
+
+    try:
+        plt.close(fig)
+    except Exception:
+        pass
+
     # If we found any tension channels, produce a dedicated tension plot as well
     try:
         # Do not produce a separate tension-only figure per user request.
@@ -318,7 +411,7 @@ def plot_csv(csv_path: str) -> str:
                 tax.plot(sec, series, label=lab, color=c)
             tax.set_xlabel('Time [s]')
             tax.set_ylabel('Tension (uH)')
-            tax.legend(loc='upper right')
+            tax.legend(loc='upper left')
             tax.grid(True, alpha=0.3)
             tension_ext = ext
             tension_png = csv_path.rsplit('.', 1)[0] + f'_tension.{tension_ext}'

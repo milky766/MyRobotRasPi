@@ -1,0 +1,5 @@
+mode,saved_csv,t0,w,fade,alpha_mlp_csv,beta_pid_esn,gamma_mlp_esn_q,gamma_mlp_esn_qdes,apply_after,post_after,generated_at
+PID+CSV,/home/hosodalab2/Desktop/MyRobot/data/mlp_esn/benchmarks/20251029/csvcsv_2/mlp_esn_135115_csvcsv_2.csv,3.0,0.5,0.15,0.85,0.95,0.8,0.8,,3.0,2025-10-29T09:00:20.039835Z
+MLP+CSV,/home/hosodalab2/Desktop/MyRobot/data/mlp_esn/benchmarks/20251029/csvcsv_2/mlp_esn_135125_csvcsv_2.csv,3.0,0.5,0.15,0.85,0.95,0.8,0.8,,3.0,2025-10-29T09:00:20.039886Z
+PID+ESN,/home/hosodalab2/Desktop/MyRobot/data/mlp_esn/benchmarks/20251029/csvcsv_2/mlp_esn_135137_csvcsv_2.csv,3.0,0.5,0.15,0.85,0.95,0.8,0.8,,3.0,2025-10-29T09:00:20.039898Z
+MLP+ESN,/home/hosodalab2/Desktop/MyRobot/data/mlp_esn/benchmarks/20251029/csvcsv_2/mlp_esn_135149_csvcsv_2.csv,3.0,0.5,0.15,0.85,0.95,0.8,0.8,,3.0,2025-10-29T09:00:20.039909Z

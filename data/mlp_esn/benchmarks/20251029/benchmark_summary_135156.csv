@@ -1,0 +1,5 @@
+mode,rmse,mae,max_abs_err,p95_abs_err,n,csv
+PID+CSV,2.569080293581443,2.023944915840389,7.734375,6.507885753676469,120,/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135115.csv
+MLP+CSV,4.559516479386993,3.9705819360498205,10.727942095588237,9.73879577205882,119,/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135125.csv
+PID+ESN,2.9549033004491223,2.291136844316325,9.228515625,6.879953124999996,120,/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135137.csv
+MLP+ESN,4.112619199831518,3.5689734261270796,10.815832720588237,8.97802734375,120,/home/hosodalab2/Desktop/MyRobot/MyRobot_RasPi_Desktop_Mix/desktop/yuma3/Robot_ESN/data/mlp_esn/csv/20251029/mlp_esn_135149.csv
